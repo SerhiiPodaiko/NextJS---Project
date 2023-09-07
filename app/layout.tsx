@@ -1,6 +1,6 @@
-import type { Metadata } from 'next'
+import type {  Metadata } from 'next'
 
-import './globals.css'
+import '@styles/globals.css'
 import ReactQueryWrapper from '@/react-query/ReactQueryWrapper'
 
 export const metadata: Metadata = {

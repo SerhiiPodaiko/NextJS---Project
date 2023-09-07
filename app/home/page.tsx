@@ -1,6 +1,14 @@
-import { Home } from '@/components/home'
+import { Header, Footer } from '@/components/layout'
 
 
-const HomePage = () => <Home />
+const HomePage = () => (
+    <>
+        <Header />
+        <main>
+            Main Page (Content)
+        </main>
+        <Footer />
+    </>
+)
 
 export default HomePage

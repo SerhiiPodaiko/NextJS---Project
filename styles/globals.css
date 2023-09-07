@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+@import 'constants.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Montserrat', 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+body.disabled {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+img {
+    object-fit: cover;
+}

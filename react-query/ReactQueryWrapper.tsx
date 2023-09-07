@@ -5,7 +5,7 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 
 const queryClient = new QueryClient()
     const ReactQueryWrapper = ({ children }: { children: React.ReactNode }) => (
-    <QueryClientProvider client={new QueryClient}>
+    <QueryClientProvider client={queryClient}>
         {children}
         <ReactQueryDevtools />
     </QueryClientProvider>
