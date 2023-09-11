@@ -1,12 +1,7 @@
-import { FC, ReactNode } from 'react'
-import styles from './styles.module.scss'
+import { FC } from 'react'
 
-type BtnProps = {
-    children: ReactNode
-    className: string
-    onClick: () => void
-    disabled?: boolean
-}
+import styles from './styles.module.scss'
+import { BtnProps } from '@ui/form/types'
 
 const Button: FC<BtnProps> = ({ children, disabled, onClick, className }) => {
     return (

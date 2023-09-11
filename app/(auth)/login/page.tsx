@@ -1,4 +1,4 @@
-import { Login } from '@/components/auth'
+import { Login } from '@components/auth'
 
 const LoginPage = () => <Login />
 

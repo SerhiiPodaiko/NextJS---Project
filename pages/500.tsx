@@ -1,11 +1,12 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import { PAGE_SLUGS } from '@constants/pages'
 
 const Custom500 = () => {
     const router = useRouter()
 
     useEffect(() => {
-        const redirect = setTimeout(() => router.push('/'), 3000)
+        const redirect = setTimeout(() => router.push(PAGE_SLUGS.home), 3000)
 
         return () => clearTimeout(redirect)
     })

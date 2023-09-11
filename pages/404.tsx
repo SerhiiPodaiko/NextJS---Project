@@ -1,18 +1,14 @@
 'use client'
 
 import { useEffect, useMemo } from 'react'
-import {useRouter} from 'next/navigation'
+import { useRouter } from 'next/navigation'
+import { PAGE_SLUGS } from '@constants/pages'
 
 const NotFoundPage = () => {
     const router = useRouter()
 
-    const bodyElement = useMemo(
-        () => (typeof document !== 'undefined' ? document.querySelector('body') : null),
-        []
-    ) as HTMLBodyElement | null
-
     useEffect(() => {
-        const redirect = setTimeout(() => router.push('/'), 3000)
+        const redirect = setTimeout(() => router.push(PAGE_SLUGS.home), 3000)
 
         return () => clearTimeout(redirect)
     }, [])

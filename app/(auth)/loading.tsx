@@ -1,4 +1,4 @@
-import Preloader from '@/ui/preloader/Preloader'
+import Preloader from '@ui/preloader/Preloader'
 
 const Loading = () => <Preloader />
 

@@ -1,5 +1,3 @@
-'use client'
-
 import './Prealoder.css'
 
 const Preloader = () => (

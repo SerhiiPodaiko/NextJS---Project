@@ -12,11 +12,17 @@ body {
     font-size: 16px;
     font-weight: 400;
     overflow-x: hidden;
-    min-height: 100vh;
+    color: var(--white);
 }
 
 body.disabled {
     overflow: hidden;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -40,8 +46,4 @@ button {
 input,
 textarea {
     outline: none;
-}
-
-img {
-    object-fit: cover;
 }
