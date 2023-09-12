@@ -5,4 +5,5 @@ export type BtnProps = {
     className: string
     onClick: () => void
     disabled?: boolean
+    type?: 'submit' | 'button'
 }
